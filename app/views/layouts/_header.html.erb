@@ -1,0 +1,14 @@
+<header>
+  <%= link_to logo, root_path %>
+  <nav class="navlinks round">
+    <ul>
+      <li><%= link_to "Home", root_path, :id => 'home' %></li>
+      <li><%= link_to "About us", about_path, :id => 'about' %></li>
+      <li><%= link_to "Technology", technology_path, :id => 'technology' %></li>
+      <li><%= link_to "Careers", careers_path, :id => 'careers' %></li>
+      <li><%= link_to "Contact", contact_path, :id => 'contact' %></li>
+    <ul>
+  </nav>
+  <div class="page_label"><%= @label %></div>
+  <%= render 'abouts/abouts_label' %>
+</header>
