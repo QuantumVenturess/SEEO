@@ -1,2 +1,33 @@
-<h1>Pages#technology</h1>
-<p>Find me in app/views/pages/technology.html.erb</p>
+<table>
+  <tr>
+  	<div id="tech1" style="display: block">
+    <p class="tech" id="tech1" style="display: none">Today’s lithium ion batteries are based on an intrinsically unstable materials platform. Chemical degradation leads ctionto premature failure in existing applications, and poor lifetimes prevent lithium ion cells from addressing key new markets. Meanwhile, efforts to reduce battery size and cost have exposed the vulnerability of conventional lithium ion batteries resulting in catastrophic failures and explosions that are taking their toll on the industry and consumers alike.</p><br />
+    </div>
+  </tr>
+  <tr>
+  	<div id="tech2" style="display: block">
+    <p class="tech" id="tech2" style="display: none">The Seeo battery boasts a critical difference from current technologies: it is entirely solid state, with no flammable or volatile components. At the core of Seeo technology is a novel solid polymer electrolyte material that can transport Li &nbsp; ions while providing inherently safe and stable support for very high energy electrode chemistries. As a result, Seeo offers dramatic improvements in energy density while also providing best-in-class product lifetime and safety. By combining this core polymer electrolyte technology with a rich knowledge base of traditional lithium-ion materials, processing, and product design, Seeo has overcome the limitations of current technologies, offering a new platform for high energy density storage systems.</p><br />
+    </div>
+  </tr>
+  <tr>
+  	<div id="tech3" style="display: block">
+    <p class="tech" id="tech3" style="display: none">Seeo’s proprietary electrolyte and cell technologies had been in development for nearly ten years within the esteemed Lawrence Berkeley National Laboratory and now at Seeo. The company has more than 30 pending patent applications.</p>
+    </div>
+  </tr>
+</table>
+
+<% content_for :stylesheets do %>
+  #technology {color: #09c;
+  		       text-shadow: 1px 1px 1px #C8C8C8;}
+  section {height: 350px;}
+  section p.tech {margin: 0px;}
+  p#tech1 {height: 84px;}
+  p#tech2 {height: 147px;}
+<% end %>
+
+<script>
+$(document).ready(function()
+{
+  $("div.page_label").fadeIn(800);	
+});
+</script>
