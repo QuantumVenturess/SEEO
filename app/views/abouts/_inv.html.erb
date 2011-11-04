@@ -1,0 +1,62 @@
+<% content_for :stylesheets do %>
+  .inv img {opacity: .65;
+  	        padding: 5px;
+  	        margin-bottom: 5px;
+  	        -webkit-transition: all .3s ease-in-out;
+  	        -moz-transition: all .3s ease-in-out;
+  	        -o-transition: all .3s ease-in-out;
+  	        transition: all .3s ease-in-out;}
+  .inv img:hover {opacity: 1;}
+  .inv p {margin: 0; margin-top: 10px; padding: 0;}
+  table.inv tr.inv {float: left; margin-bottom: 50px;}
+  table.inv tr.inv td {vertical-align: top; padding: 0 75px 0 0;}
+<% end %>
+
+<table class="inv">
+  <tr class="inv">
+    <td>
+      <%= link_to khosla_img, "javascript:showonlyonev3('investors1-2');" %><br />
+      <%= link_to gsr_img, "javascript:showonlyonev3('investors3-2');" %>
+    </td>
+    <td>
+      <%= link_to google_img, "javascript:showonlyonev3('investors2-2');" %><br />
+      <%= link_to presidio_img, "javascript:showonlyonev3('investors4-2');" %>
+    </td>
+  </tr>		
+  <tr>
+  	<td>
+      <div name="investors-2" id="investors1-2" style="display: none;">
+      	<div id="khosla1" style="display: none;">
+      	  <h1>Khosla Ventures</h1>
+      	</div>
+      	<div id="khosla2" style="display: none;">      	
+          <p><%= khosla %></p>
+        </div>
+      </div>
+      <div name="investors-2" id="investors2-2" style="display: none;">
+      	<div id="google1" style="display: none;">
+      	  <h1>Google.org</h1>
+  	    </div>
+  	    <div id="google2" style="display: none;">
+      	  <p><%= google %></p>
+      	</div>
+      </div>
+      <div name="investors-2" id="investors3-2" style="display: none;">
+      	<div id="gsr1" style="display: none;">
+      	  <h1>GSR Ventures</h1>
+      	</div>
+      	<div id="gsr2" style="display: none;">
+      	  <p><%= gsr %></p>
+      	</div>
+      </div>
+      <div name="investors-2" id="investors4-2" style="display: none;">
+      	<div id="presidio1" style="display: none;">
+      	  <h1>Presidio Ventures</h1>
+      	</div>
+      	<div id="presidio2" style="display: none;">
+          <p><%= presidio %></p>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
