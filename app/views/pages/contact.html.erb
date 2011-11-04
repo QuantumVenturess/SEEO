@@ -7,7 +7,7 @@
   	  </div>
   	</td>
   	<td class="address">
-  	  <div id="address">
+  	  <div id="address" style="display: none;">
   	    <h1><%= seeo %></h1>	
   	    <p>3906 Trust Way</p>
   	    <p>Hayward CA, 94545</p>
@@ -27,6 +27,8 @@
 <script>
 $(document).ready(function() 
 {
-  $("div.page_label").fadeIn(800);
+  $("div.page_label").fadeIn(800, function() {
+  	$("div#address").show("slide", { direction: 'right' }, 500);
+  });
 });
 </script>
