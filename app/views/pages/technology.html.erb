@@ -26,8 +26,11 @@
 <% end %>
 
 <script>
-$(document).ready(function()
+$(document).ready(function() 
 {
-  $("div.page_label").fadeIn(800);	
+  $("div.page_label").fadeIn(800, function() {
+    $("p#tech1").show("slide", { direction: "left" }, 600, function() {
+      $("p#tech2").show("slide", { direction: "right"}, 600, function() {
+        $("p#tech3").show("slide", { direction: "left" }, 600); }); }); });
 });
 </script>

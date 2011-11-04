@@ -31,8 +31,6 @@ body {
 
 .container {
   width: 951px;
-  margin-left: auto;
-  margin-right: auto;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
   -border-radius: 30px;
@@ -91,7 +89,6 @@ div.page_label, div.abouts_label {
   width: 50%;	
   color: #fff;
   font-size: 300%;
-  font-weight: bold;
   font-family: 'SansationBold', sans-serif, Verdana;
   float: none;
   position: relative;
@@ -112,7 +109,6 @@ nav {
   padding: 1px 0 1px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: bold;
   font-family: 'SansationBold', sans-serif, Verdana;
 }
 
@@ -219,7 +215,7 @@ section h1, section h2, section h3 {
   font-size: 200%;
   font-family: 'SansationRegular', sans-serif, Verdana;
   margin: 0;
-  color: rgba(75, 75, 75, 1);
+  color: #323232;
 }
 
 section p {
