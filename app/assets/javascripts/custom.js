@@ -127,4 +127,13 @@ function hide2(id) {
 	else {
 		ele.style.display = "none";
 	}
+}
+
+function ShowCareer(id)
+{
+  var i = id
+  $("a.selected").removeClass("selected");
+  $("a.link").filter("#"+i).addClass("selected");
+  $("div.careers").hide(0);
+  $("div#"+i).fadeIn(500);
 }  

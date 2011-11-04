@@ -1,2 +1,32 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<table class="contact">
+  <tr>
+  	<td class="contact">
+  	  <div id="info">
+  	    <p>For more information, please contact us at</p>
+  	    <p><%= mail_to("info@seeo.com", "Info@SEEO.com", :subject => "Info") %></p>
+  	  </div>
+  	</td>
+  	<td class="address">
+  	  <div id="address">
+  	    <h1><%= seeo %></h1>	
+  	    <p>3906 Trust Way</p>
+  	    <p>Hayward CA, 94545</p>
+  	  </div>
+  	</td>
+  	<td class="map">
+  	  <%= render 'pages/map' %>
+  	</td>
+  </tr>
+</table>
+
+<% content_for :stylesheets do %>
+  #contact {color: #09c;
+  		    text-shadow: 1px 1px 1px #C8C8C8;}
+<% end %>
+
+<script>
+$(document).ready(function() 
+{
+  $("div.page_label").fadeIn(800);
+});
+</script>
