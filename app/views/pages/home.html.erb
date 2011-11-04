@@ -4,3 +4,17 @@
 <div id="home2">
   <p>Seeo is developing a new generation of rechargeable lithium batteries with unprecedented energy density, lifetime, and safety. Leapfrogging existing performance and cost standards, Seeo technology represents a unique solution for addressing the critical national and global need for electric vehicles and large-scale renewable energy storage.</p>
 </div>
+
+<% content_for :stylesheets do %>
+  section {height: 350px;}
+  div#home1, div#home2 {display: none;}
+<% end %>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+  $("div.page_label").fadeIn(800, function() {
+    $("div#home1").slideDown(1000, function() { 
+      $("div#home2").slideDown(800); }); })
+});
+</script>

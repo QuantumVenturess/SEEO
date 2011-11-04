@@ -215,7 +215,7 @@ section h1, section h2, section h3 {
   font-size: 200%;
   font-family: 'SansationRegular', sans-serif, Verdana;
   margin: 0;
-  color: #323232;
+  color: rgba(75, 75, 75, 1);
 }
 
 section p {
