@@ -1,5 +1,71 @@
+<table class="ga">
+  <tr class="icons">
+  	<td class="img">
+      <%= link_to doe_img,  "http://energy.gov/", :target => "_blank" %>
+    </td>
+    <td class="info">
+      <div id="doe">
+  	  	<h1>Department of Energy</h1>
+        <p><%= doe %></p>
+      </div>
+    </td>
+  </tr>
+  <tr class="icons">
+  	<td class="img">
+      <%= link_to rd_img, "http://www.rdmag.com/Awards/RD-100-Awards/R-D-100-Awards/", :target => "_blank" %>
+    </td>
+    <td class="info">
+      <div id="rd">
+      	<h1>R&D 100</h1>
+      	<p><%= rd %></p>
+      </div>
+    </td>
+  </tr>
+  <tr class="icons">
+  	<td class="img">
+      <%= link_to doe2_img, "http://energy.gov/", :target => "_blank" %>
+    </td>
+    <td class="info">
+      <div id="doe2">
+      	<h1>Department of Energy</h1>
+        <p><%= doe2 %></p>
+      </div>
+    </td>
+  </tr>
+  <tr class="icons">
+  	<td class="img">
+      <%= link_to gg_img, "http://alwayson.goingon.com/GoingGreen", :target => "_blank" %>
+    </td>
+    <td class="info">
+      <div id="gg">
+      	<h1>Going Green</h1>
+      	<p><%= gg %></p>
+      </div>
+    </td>
+  </tr>
+  <tr class="icons">
+  	<td class="img">
+      <%= link_to tr_img, "http://www.technologyreview.com/tr35/", :target => "_blank" %>
+    </td>
+    <td class="info">
+      <div id="tr">
+      	<h1>Technology Review</h1>
+      	<p><%= tr %></p>
+      </div>
+  </tr>
+  <tr class="icons">
+  	<td class="img">
+      <%= link_to tie_img, "http://www.tie50.net/TiE50Awards/", :target => "_blank" %>
+    </td>
+    <td class="info">
+      <div id="tie">
+      	<h1>TiE 50 Awards Program</h1>
+      	<p><%= tie %></p>
+      </div>
+  </tr>
+</table>
+
 <% content_for :stylesheets do %>
-  #doe, #doe2, #rd, #gg, #tr, #tie {display: none;}
   .ga img {opacity: .75;
   	       padding: 5px;
   	       margin-right: 10px;
@@ -11,56 +77,3 @@
   .ga img:hover {opacity: 1;}
   .ga p {margin: 0; padding: 0;}
 <% end %>
-
-<table class="ga">
-  <tr class="icons">
-  	<td>
-      <%= link_to doe_img,  "http://energy.gov/", :target => "_blank" %>
-      <%= link_to doe2_img, "http://energy.gov/", :target => "_blank" %>
-      <%= link_to rd_img, "http://www.rdmag.com/Awards/RD-100-Awards/R-D-100-Awards/", :target => "_blank" %>
-      <%= link_to gg_img, "http://alwayson.goingon.com/GoingGreen", :target => "_blank" %>
-      <%= link_to tr_img, "http://www.technologyreview.com/tr35/", :target => "_blank" %>
-      <%= link_to tie_img, "http://www.tie50.net/TiE50Awards/", :target => "_blank" %>
-    </td>
-  </tr>
-  <tr>
-  	<td>
-  	  <div id="doe">
-  	  	<br />
-  	  	<h1>Department of Energy</h1>
-  	  	<br />
-        <p><%= doe %></p>
-      </div>
-      <div id="doe2">
-      	<br />
-      	<h1>Department of Energy</h1>
-      	<br />
-        <p><%= doe2 %></p>
-      </div>
-      <div id="rd">
-      	<br />
-      	<h1>R&D 100</h1>
-      	<br />
-      	<p><%= rd %></p>
-      </div>
-      <div id="gg">
-      	<br />
-      	<h1>Going Green</h1>
-      	<br />
-      	<p><%= gg %></p>
-      </div>
-      <div id="tr">
-      	<br />
-      	<h1>Technology Review</h1>
-      	<br />
-      	<p><%= tr %></p>
-      </div>
-      <div id="tie">
-      	<br />
-      	<h1>TiE 50 Awards Program</h1>
-      	<br />
-      	<p><%= tie %></p>
-      </div>
-    </td>
-  </tr>
-</table>

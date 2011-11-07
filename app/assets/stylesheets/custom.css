@@ -215,10 +215,20 @@ section {
   box-shadow: 1px 1px 20px rgba(150, 150, 150, 1), -1px 1px 20px rgba(150, 150, 150, 1);
 }
 
-section h1, section h2, section h3 {
+section h1 {
   font-size: 200%;
   font-family: 'SansationRegular', sans-serif, Verdana;
   margin: 0;
+  color: rgba(50, 50, 50, 1);
+}
+
+table.makp h1, table.bod h1, table.sab h1, table.inv h1, table.ga h1 {
+  font-weight: bold;
+}
+
+table.makp h2, table.bod h2, table.sab h2 {
+  font-size: 15px;
+  font-family: 'NobileItalic';
   color: rgba(75, 75, 75, 1);
 }
 
@@ -226,7 +236,7 @@ section p {
   font-family: 'NobileRegular', Verdana;
   margin-top: 20px;
   margin-bottom: 25px;
-  color: #4B4B4B;
+  color: rgba(75, 75, 75, 1);
 }
 
 div#content h1 {
@@ -332,6 +342,19 @@ article.careers {
   -moz-border-radius:    15px;
   -webkit-border-radius: 15px;
   -border-radius:        15px;
+}
+
+div.working {
+  box-shadow: 2px 2px 2px -1px #ccc;
+  -moz-border-radius:    15px;
+  -webkit-border-radius: 15px;
+  -border-radius:        15px;  
+}
+
+article.careers h2, article.careers h3 {
+  font-family: 'SansationRegular', sans-serif, Verdana;
+  font-size: 28px;
+  color: rgba(50, 50, 50, 1);
 }
 
 td.contact {

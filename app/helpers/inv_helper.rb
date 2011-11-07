@@ -5,7 +5,7 @@ module InvHelper
   end
   
   def khosla_img
-  	image_tag("khosla.jpg", :alt => "Khosla", :class => "inv_img round", :onclick => "ShowBox1();", :id => "investors1-2" )
+  	image_tag("khosla.jpg", :alt => "Khosla", :class => "inv_img round", :onclick => "ShowBox1();", :id => "investors1-2", :width => "202" , :height => "52")
   end
   
   def google
@@ -13,7 +13,7 @@ module InvHelper
   end
   
   def google_img
-  	image_tag("google.jpg", :alt => "Google", :class => "inv_img round", :onclick => "ShowBox2();", :id => "investors2-2" )
+  	image_tag("google.jpg", :alt => "Google", :class => "inv_img round", :onclick => "ShowBox2();", :id => "investors2-2", :width => "150", :height => "56" )
   end
   
   def gsr
@@ -21,7 +21,7 @@ module InvHelper
   end
   
   def gsr_img
-  	image_tag("gsr.jpg", :alt => "GSR", :class => "inv_img round", :onclick => "ShowBox3();", :id => "investors3-2" )
+  	image_tag("gsr.jpg", :alt => "GSR", :class => "inv_img round", :onclick => "ShowBox3();", :id => "investors3-2", :width => "150", :height => "42" )
   end
   
   def presidio
@@ -29,6 +29,6 @@ module InvHelper
   end
   
   def presidio_img
-  	image_tag("presidio.jpg", :alt => "Presidio", :class => "inv_img round", :onclick => "ShowBox4();", :id => "investors4-2" )
+  	image_tag("presidio.jpg", :alt => "Presidio", :class => "inv_img round", :onclick => "ShowBox4();", :id => "investors4-2", :width => "141", :height => "52" )
   end
 end

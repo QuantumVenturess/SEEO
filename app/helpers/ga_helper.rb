@@ -1,7 +1,7 @@
 module GaHelper
 
   def doe_img
-  	image_tag("doe.jpg", :alt => "Department of Energy", :class => "ga_img round", :onMouseOver => "$('div#doe').fadeToggle(400)", :onMouseOut => "hide2('doe')")
+  	image_tag("doe.jpg", :alt => "Department of Energy", :class => "ga_img round", :width => "149", :height => "150")
   end
   
   def doe
@@ -9,7 +9,7 @@ module GaHelper
   end
   
   def doe2_img
-  	image_tag("doe.jpg", :alt => "Department of Energy", :class => "ga_img round", :onMouseOver => "$('div#doe2').fadeToggle(400)", :onMouseOut => "hide2('doe2')")
+  	image_tag("doe.jpg", :alt => "Department of Energy", :class => "ga_img round", :width => "149", :height => "150")
   end
   
   def doe2
@@ -17,7 +17,7 @@ module GaHelper
   end
   
   def rd_img
-  	image_tag("rd.jpg", :alt => "R&D 100", :class => "ga_img round", :onMouseOver => "$('div#rd').fadeToggle(400)", :onMouseOut => "hide2('rd')")
+  	image_tag("rd.jpg", :alt => "R&D 100", :class => "ga_img round", :width => "150", :height => "154")
   end
   
   def rd
@@ -25,7 +25,7 @@ module GaHelper
   end
   
   def gg_img
-  	image_tag("gg.jpg", :alt => "Going Green", :class => "ga_img round", :onMouseOver => "$('div#gg').fadeToggle(400)", :onMouseOut => "hide2('gg')")
+  	image_tag("gg.jpg", :alt => "Going Green", :class => "ga_img round", :width => "117", :height => "80")
   end
   
   def gg
@@ -33,7 +33,7 @@ module GaHelper
   end
   
   def tr_img
-  	image_tag("tr.jpg", :alt => "Technology Review", :class => "ga_img round", :onMouseOver => "$('div#tr').fadeToggle(400)", :onMouseOut => "hide2('tr')")
+  	image_tag("tr.jpg", :alt => "Technology Review", :class => "ga_img round", :width => "159", :height => "86")
   end
   
   def tr
@@ -41,7 +41,7 @@ module GaHelper
   end
   
   def tie_img
-  	image_tag("tie.jpg", :alt => "TiE 50 2011", :class => "ga_img round", :onMouseOver => "$('div#tie').fadeToggle(400)", :onMouseOut => "hide2('tie')")
+  	image_tag("tie.jpg", :alt => "TiE 50 2011", :class => "ga_img round", :width => "113", :height => "113")
   end
   
   def tie

@@ -132,6 +132,7 @@ function hide2(id) {
 function ShowCareer(id)
 {
   var i = id
+  $("div.working").css("display", "none");
   $("a.selected").removeClass("selected");
   $("a.link").filter("#"+i).addClass("selected");
   $("div.careers").hide(0);

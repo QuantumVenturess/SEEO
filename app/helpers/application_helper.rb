@@ -1,7 +1,7 @@
 module ApplicationHelper
 	
   def logo
-  	logo = image_tag("SEEO.png", :alt => "SEEO", :class => "logo")
+  	logo = image_tag("SEEO.png", :alt => "SEEO", :class => "logo", :width => "363", :height => "100")
   end
   
   def seeo
@@ -18,7 +18,7 @@ module ApplicationHelper
   end
   
   def clouds
-  	clouds = image_tag("clouds.png", :id => "clouds")
+  	clouds = image_tag("clouds.png", :id => "clouds", :width => "951", :height => "126")
   end
   
   def background

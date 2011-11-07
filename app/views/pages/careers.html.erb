@@ -19,6 +19,16 @@
   	  <div>
   	  	<p>To apply for a position, please send a short cover letter and resume to <%= mail_to('hr@seeo.com', 'hr@seeo.com', :subject => "SEEO Careers: Requisition \#") %>. Please include the requisition number in the subject of your email.</p>
   	  </div>
+  	  <div class="working" style="display: block;">
+  	    <h1>Working at Seeo</h1>
+  	    <ul>
+  	      <li><p>We offer competitive compensation packages including stock options and a comprehensive employee benefit package.</p></li>
+  	      <li><p>We recognize that every employee is absolutely critical to our mission, and are dedicated to the personal and professional development of every individual.</p></li>
+  	      <li><p>We’re committed to integrity, excellence, hard work, and continuous improvement.…but believe that these can and must go hand-in-hand with creativity, imagination, and healthy living.</p></li>
+  	      <li><p>We’re conscious of environmental and social sustainability in our business practices.</p></li>
+  	      <li><p>We’re <%= link_to "located", contact_path %> in Hayward, CA, just off the Highway 92 Clawiter Rd exit at the foot of the San Mateo bridge.</p></li>
+  	    </ul>
+  	  </div>
   	</td>
   </tr>
 </table>
@@ -27,6 +37,8 @@
   #careers {color: #09c;
   		    text-shadow: 1px 1px 1px #C8C8C8;}
   section {padding-bottom: 100px;}
+  div.working {padding: 30px;}
+  div.working h1 {margin-bottom: 20px;}
 <% end %>
 
 <script>
