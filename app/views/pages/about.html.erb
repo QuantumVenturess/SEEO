@@ -5,22 +5,22 @@
   	</td>
   	<td class="about_us">
   	  <div id="content">
-  	  	<div name="newboxes-2" id="newboxes1-2" style="display: block;">
+  	  	<div name="newboxes-2" id="newboxes1-2" style="display: block;" class="about">
   	  	  <%= render 'about_us' %>
   	  	</div>
-  	  	<div name="newboxes-2" id="newboxes2-2" style="display: none;">
+  	  	<div name="newboxes-2" id="makp" style="display: none" class="about">
   	      <%= render 'abouts/makp' %>
   	    </div>
-        <div name="newboxes-2" id="newboxes3-2" style="display: none">
+        <div name="newboxes-2" id="bod" style="display: none" class="about">
   	      <%= render 'abouts/bod' %>
   	    </div>
-  	    <div name="newboxes-2" id="newboxes4-2" style="display: none">
+  	    <div name="newboxes-2" id="sab" style="display: none" class="about">
   	      <%= render 'abouts/sab' %>
   	    </div>
-  	    <div name="newboxes-2" id="newboxes5-2" style="display: none">
+  	    <div name="newboxes-2" id="inv" style="display: none" class="about">
   	      <%= render 'abouts/inv' %>
   	    </div>
-  	    <div name="newboxes-2" id="newboxes6-2" style="display: none">
+  	    <div name="newboxes-2" id="ga" style="display: none" class="about">
   	      <%= render 'abouts/ga' %>
   	    </div>
       </div>
@@ -32,6 +32,10 @@
   #about {color: #09c;
   		  text-shadow: 1px 1px 1px #C8C8C8;}
   section {padding-bottom: 100px;}
+  div.clouds {background-image: url('/assets/clouds3.png');
+  						background-repeat: no-repeat;
+  						background-position: center top;
+}
 <% end %>
 
 <script>

@@ -7,7 +7,7 @@
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= stylesheet_link_tag 'application' %>
-    <%= javascript_include_tag 'application' %>  
+    <%= javascript_include_tag 'application' %>      
     <style type="text/css">
       <%= yield :stylesheets %>
     </style>
@@ -16,8 +16,9 @@
   <body>
   	<div class="container">
   	  <%= render 'layouts/header' %>
-  	  <%= clouds %>
-  	  <section class="round">
+  	  <div class="clouds">
+  	  </div>
+  	  <section>
   	    <%= yield %>
   	  </section>
   	  <%= render 'layouts/footer' %>

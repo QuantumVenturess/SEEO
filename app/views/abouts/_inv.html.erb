@@ -10,6 +10,12 @@
   .inv p {margin: 0; margin-top: 10px; padding: 0;}
   table.inv tr.inv {float: left; margin-bottom: 25px;}
   table.inv tr.inv td {vertical-align: top; padding: 0 75px 0 0;}
+  table.inv tr.info a {color: rgba(0, 153, 204, 1);
+  												-webkit-transition: all .2s ease-in-out;
+												  -moz-transition: all .2s ease-in-out;
+												  -o-transition: all .2s ease-in-out;
+												  transition: all .2s ease-in-out;}
+  table.inv tr.info a:hover {opacity: .65;}
 <% end %>
 
 <table class="inv">
@@ -23,11 +29,11 @@
       <%= link_to presidio_img, "javascript:showonlyonev3('investors4-2');" %>
     </td>
   </tr>		
-  <tr>
+  <tr class="info">
   	<td>
       <div name="investors-2" id="investors1-2" style="display: none;">
       	<div id="khosla1" style="display: none;">
-      	  <h1>Khosla Ventures</h1>
+      	  <h1><a href="http://www.khoslaventures.com/khosla/default.html" target="_blank">Khosla Ventures</a></h1>
       	</div>
       	<div id="khosla2" style="display: none;">      	
           <p><%= khosla %></p>
@@ -35,7 +41,7 @@
       </div>
       <div name="investors-2" id="investors2-2" style="display: none;">
       	<div id="google1" style="display: none;">
-      	  <h1>Google.org</h1>
+      	  <h1><a href="http://www.google.org/" target="_blank">Google.org</a></h1>
   	    </div>
   	    <div id="google2" style="display: none;">
       	  <p><%= google %></p>
@@ -43,7 +49,7 @@
       </div>
       <div name="investors-2" id="investors3-2" style="display: none;">
       	<div id="gsr1" style="display: none;">
-      	  <h1>GSR Ventures</h1>
+      	  <h1><a href="http://www.gsrventures.cn/en/" target="_blank">GSR Ventures</a></h1>
       	</div>
       	<div id="gsr2" style="display: none;">
       	  <p><%= gsr %></p>
@@ -51,7 +57,7 @@
       </div>
       <div name="investors-2" id="investors4-2" style="display: none;">
       	<div id="presidio1" style="display: none;">
-      	  <h1>Presidio Ventures</h1>
+      	  <h1><a href="http://www.presidio-ventures.com/" target="_blank">Presidio Ventures</a></h1>
       	</div>
       	<div id="presidio2" style="display: none;">
           <p><%= presidio %></p>

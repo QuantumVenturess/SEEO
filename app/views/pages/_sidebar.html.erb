@@ -1,7 +1,21 @@
 <ul>
-  <li><%= link_to "Management & Key People", "javascript:showonlyonev2('newboxes2-2');", :onclick => "AboutLabel('makp')", :id => "makp", :class => "link" %></li>
-  <li><%= link_to "Board of Directors", "javascript:showonlyonev2('newboxes3-2');", :onclick => "AboutLabel('bod')", :id => "bod", :class => "link" %></li>
-  <li><%= link_to "Scientific Advisory Board", "javascript:showonlyonev2('newboxes4-2');", :onclick => "AboutLabel('sab')", :id => "sab", :class => "link" %></li>
-  <li><%= link_to "Investors", "javascript:showonlyonev2('newboxes5-2');", :onclick => "AboutLabel('inv')", :id => "inv", :class => "link"  %></li>
-  <li><%= link_to "Grants & Awards", "javascript:showonlyonev2('newboxes6-2');", :onclick => "AboutLabel('ga')", :id => "ga", :class => "link"  %></li>
+  <li><%= link_to "Management & Key People", "javascript:ShowAbout('makp');", :id => "makp", :class => "link" %></li>
+  <li><%= link_to "Board of Directors", "javascript:ShowAbout('bod');", :id => "bod", :class => "link" %></li>
+  <li><%= link_to "Scientific Advisory Board", "javascript:ShowAbout('sab');", :id => "sab", :class => "link" %></li>
+  <li><%= link_to "Investors", "javascript:ShowAbout('inv');", :id => "inv", :class => "link"  %></li>
+  <li><%= link_to "Grants & Awards", "javascript:ShowAbout('ga');", :id => "ga", :class => "link"  %></li>
 </ul>
+
+<script>
+  function ShowAbout(id)
+  {
+  	var i = id
+  	$("a.selected").removeClass("selected");
+  	$("a.link").filter("#"+i).addClass("selected");
+  	$("div.page_label").hide(0);
+  	$("div.abouts_label").hide(0, function() { 
+  		$("div#"+i).show(0); });
+  	$("div.about").css("display", "none");
+  	$("div#"+i).fadeIn(600);
+  }
+</script>
